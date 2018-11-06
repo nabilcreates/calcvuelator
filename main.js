@@ -20,6 +20,10 @@ var app = new Vue({
             this.number = ""
         },
 
+        empty(){
+            this.number = ""
+        },
+        
         evaluate() {
 
             console.log(Number(this.number))
