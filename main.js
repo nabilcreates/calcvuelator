@@ -22,6 +22,7 @@ var app = new Vue({
 
         empty(){
             this.number = ""
+            this.answer = ""
         },
         
         evaluate() {
