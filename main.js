@@ -29,19 +29,19 @@ var app = new Vue({
             
             if (this.mode == 'plus') {
                 console.log('plus')
-                this.answer = Number(this.number) + Number(this.previous);
+                this.answer = Number(this.previous) + Number(this.number);
                 console.log(this.answer)
             } else if (this.mode == 'minus') {
                 console.log('minus')
-                this.answer = Number(this.number) - Number(this.previous);
+                this.answer = Number(this.previous) - Number(this.number);
                 console.log(this.answer)
             } else if (this.mode == 'times') {
                 console.log('times')
-                this.answer = Number(this.number) * Number(this.previous);
+                this.answer = Number(this.previous) * Number(this.number);
                 console.log(this.answer)
             } else if (this.mode == 'divide') {
                 console.log('divide')
-                this.answer = Number(this.number) / Number(this.previous);
+                this.answer = Number(this.previous) / Number(this.number);
                 console.log(this.answer)
             }
 
