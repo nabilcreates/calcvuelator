@@ -30,6 +30,10 @@
         <Button @click='evaluate()'>=</Button>
         <Button @click='empty()'>C</Button>
 
+        <ul>
+            <li v-for='item in history'>{{item}}</li>
+        </ul>
+
         <h1>{{answer}}</h1>
         
     </div>

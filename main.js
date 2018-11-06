@@ -6,6 +6,8 @@ var app = new Vue({
             mode: 'plus',
             previous: "",
             answer: "",
+
+            history: [],
         }
     },
 
@@ -21,12 +23,13 @@ var app = new Vue({
         },
 
         empty(){
+            // PUSH TO HISTORY
+            this.history.push(this.answer)
             this.number = ""
             this.answer = ""
         },
         
         evaluate() {
-
             console.log(Number(this.number))
             console.log(Number(this.previous))
 
