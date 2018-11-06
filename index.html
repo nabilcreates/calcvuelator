@@ -11,7 +11,6 @@
 
     <div class="app">
 
-        <h1>{{answer}}</h1>
         <Button @click='concat(0)'>0</Button>
         <Button @click='concat(1)'>1</Button>
         <Button @click='concat(2)'>2</Button>
@@ -22,13 +21,15 @@
         <Button @click='concat(7)'>7</Button>
         <Button @click='concat(8)'>8</Button>
         <Button @click='concat(9)'>9</Button>
-
+        
         <Button @click='setMode("plus")'>+</Button>
         <Button @click='setMode("minus")'>-</Button>
         <Button @click='setMode("times")'>*</Button>
         <Button @click='setMode("divide")'>/</Button>
-
+        
         <Button @click='evaluate()'>=</Button>
+        
+        <h1>{{answer}}</h1>
         
     </div>
     
